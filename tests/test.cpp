@@ -1,8 +1,9 @@
-// Copyright 2018 Your Name <your_email>
+// Copyright 2020 Nikita Klimov nik179804@gmail.com
 
 #include <gtest/gtest.h>
-#include <sstream>
+
 #include <Main.hpp>
+#include <sstream>
 
 std::string getFullPath(const std::string& name) {
   std::string s(__FILE__);
@@ -126,7 +127,7 @@ TEST(Main, LengthOfFields) {
     "count": 3
   }
 })");
-  ASSERT_EQ(b.getL().length_1_field, 22); 
+  ASSERT_EQ(b.getL().length_1_field, 22);
   ASSERT_EQ(b.getL().length_2_field, 17);
   ASSERT_EQ(b.getL().length_3_field, 6);
   ASSERT_EQ(b.getL().length_4_field, 19);
@@ -178,7 +179,7 @@ TEST(Main, PrintRow) {
       "debt": null
     })"));
   std::stringstream ss;
-  p.printRow(ss,s);
+  p.printRow(ss, s);
   ASSERT_EQ(ss.str(), "|Ivanov Petr    |1       |4.25  |null           |");
   s.setGroup(json::parse(R"({"group": 25})").at("group"));
   s.setDebt(json::parse(R"({"debt": ["C++"]})").at("debt"));

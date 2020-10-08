@@ -1,6 +1,5 @@
-//
-// Created by nikitaklimov on 17.09.2020.
-//
+// Copyright 2020 Nikita Klimov nik179804@gmail.com
+
 #include "Main.hpp"
 #include <algorithm>
 

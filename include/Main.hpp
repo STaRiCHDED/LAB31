@@ -1,9 +1,7 @@
-//
-// Created by nikitaklimov on 17.09.2020.
-//
+// Copyright 2020 Nikita Klimov nik179804@gmail.com
 
-#ifndef TEMPLATE_MAIN_HPP
-#define TEMPLATE_MAIN_HPP
+#ifndef INCLUDE_MAIN_HPP_
+#define INCLUDE_MAIN_HPP_
 #include <fstream>
 #include <iomanip>
 #include <iostream>
@@ -30,12 +28,12 @@ class Main {
   ~Main();
   const std::vector<Student> &getStudents() const;
   const Lengths_of_fields &getL() const;
-  void printRow(std::ostream& out, const Student &student) const;
+  void printRow(std::ostream &out, const Student &student) const;
   std::string getSeparator() const;
   void parser(const std::string &path);
   void printData();
   bool emptyJSONobject() const;
   void setJSONString(const std::string &JSON);
-  friend std::ostream& operator <<(std::ostream& out, Main& p);
+  friend std::ostream &operator<<(std::ostream &out, Main &p);
 };
-#endif  // TEMPLATE_MAIN_HPP
+#endif  // INCLUDE_MAIN_HPP_

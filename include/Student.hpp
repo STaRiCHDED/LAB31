@@ -1,9 +1,7 @@
-//
-// Created by nikitaklimov on 17.09.2020.
-//
+// Copyright 2020 Nikita Klimov nik179804@gmail.com
 
-#ifndef TEMPLATE_STUDENT_HPP
-#define TEMPLATE_STUDENT_HPP
+#ifndef INCLUDE_STUDENT_HPP_
+#define INCLUDE_STUDENT_HPP_
 #include <any>
 #include <exception>
 #include <nlohmann/json.hpp>
@@ -30,4 +28,4 @@ class Student {
   void from_json(const json &j);
 };
 void from_json(const json &j, Student &s);
-#endif  // TEMPLATE_STUDENT_HPP
+#endif  // INCLUDE_STUDENT_HPP_

@@ -1,9 +1,8 @@
-//
-// Created by nikitaklimov on 17.09.2020.
-//
+// Copyright 2020 Nikita Klimov nik179804@gmail.com
+
+#include "Student.hpp"
 
 #include <iostream>
-#include "Student.hpp"
 
 using nlohmann::json;
 
